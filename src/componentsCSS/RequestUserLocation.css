@@ -1,0 +1,41 @@
+.requestUserLocation {
+    position: absolute;
+    width: 400px;
+    height: fit-content;
+    padding: 15px;
+    top: 25vh;
+    z-index: 999;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.requestUserLocation h1 {
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+.requestUserLocation img {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+.requestUserLocation button {
+    margin-bottom: 15px;
+    width: fit-content;
+    align-self: center;
+    padding: 10px;
+    background-color: white;
+    outline: 0;
+    border: 1px solid rgba(30, 255, 0, 0.712);
+    cursor: pointer;
+}
+.requestUserLocation button:hover {
+    background-color: rgba(30, 255, 0, 0.712);
+}
+.requestUserLocation p {
+    font-size: 14px;
+    opacity: 0.9;
+}

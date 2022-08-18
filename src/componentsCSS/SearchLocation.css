@@ -1,0 +1,78 @@
+.SearchLocation {
+    position: absolute;
+    width: 400px;
+    height: 68px;
+    top: 5px;
+    left: 10px;
+    z-index: 998;
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 20%), 0 -1px 0px rgb(0 0 0 / 2%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuButton, .searchButton {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.searchButton {
+    margin: 15px;
+}
+.routesButton {
+    width: 22px;
+    height: 22px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+.menuButton {
+    margin-right: 16px;
+}
+.separation {
+    height: 31px;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+.searchInput {
+    width: 216px;
+    height: 24px;
+    border: none;
+    font-size: 16px;
+}
+.searchInput:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+.results-of-search-field {
+    position: absolute;
+    background: #FFF;
+    top: 68px;
+    left: 0px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    padding-left: 15px;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 20%), 0 -1px 0px rgb(0 0 0 / 2%);
+}
+@media(max-width: 395px) {
+    .menuButton {
+        display: none;
+    }
+}
+@media(max-width: 350px) {
+    .searchButton {
+        width: 20px;
+        height: 20px;
+    }
+    .routesButton {
+        width: 20px;
+        height: 20px;
+    }
+    .searchInput {
+        width: 180px;
+        height: 24px;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,203 @@
+.SearchRoutes {
+    position: absolute;
+    width: 408px;
+    height: 100vh;
+    z-index: 998;
+    background-color: #FFF;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 20%), 0 -1px 0px rgb(0 0 0 / 2%);
+    display: flex;
+    left: 0;
+}
+
+.closeRoutesComponent {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.closeRoutesComponent img {
+    width: 100%;
+    height: 100%;
+}
+
+.searchRoutesDecoration {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.hideRoutesComponent {
+    position: absolute;
+    right: 10px;
+    top: 65px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.hideRoutesComponent img {
+    width: 100%;
+    height: 100%;
+}
+
+.showRoutesComponent {
+    position: absolute;
+    right: 10px;
+    top: 65px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.showRoutesComponent img {
+    width: 100%;
+    height: 100%;
+}
+
+.searchRoutesDecoration img {
+    width: 24px;
+    height: 24px;
+}
+
+.searchRoutesField {
+    margin-top: 100px;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.SearchRoutesInputField {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.searchRoutesInput {
+    padding: 10px;
+    width: 264px;
+    border-radius: 8px;
+    font-size: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.747);
+}
+
+.searchRoutesInput:focus {
+    border: 1px solid white;
+    outline: 1px solid rgb(0, 132, 255);
+}
+
+.reverseIcon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.resultsOfSearchInitialRoute {
+    position: absolute;
+    background: #FFF;
+    top: 230px;
+    left: 0px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    padding-left: 50px;
+    z-index: 999;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 20%), 0 -1px 0px rgb(0 0 0 / 2%);
+}
+
+.userLocationPermissionField {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    position: absolute;
+    padding: 8px 0 8px 50px;
+    top: 250px;
+    gap: 25px;
+    cursor: pointer;
+}
+
+.userLocationPermissionField:hover {
+    background-color: rgba(212, 212, 212, 0.459);
+}
+
+.userLocationPermissionField img {
+    width: 24px;
+    height: 24px;
+}
+
+@keyframes hideComponent {
+    from {
+        left: 0
+    }
+
+    to {
+        left: -353px
+    }
+}
+
+@keyframes hideComponentWithWidthSmallerThan420 {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: calc(-100vw + 55px);
+    }
+}
+
+@keyframes showComponent {
+    from {
+        left: -353px
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes showComponentWithWidthSmallerThan420 {
+    from {
+        left: calc(-100vw + 55px);
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes removesOpacity {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes putsTheOpacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media(max-width: 390px) {
+    .resultsOfSearchInitialRoute {
+        padding-left: 40px;
+    }
+}
+
+@media(max-width: 360px) {
+    .resultsOfSearchInitialRoute {
+        padding-left: 30px;
+    }
+}
