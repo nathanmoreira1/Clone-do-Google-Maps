@@ -89,17 +89,19 @@ export const Map = () => {
             {!showRoutesComponent &&
                 <SearchLocation
                     userLocationPermission={userLocationPermission}
-                    coordinates={coordinates} adress={adress}
+                    coordinates={coordinates} 
+                    adress={adress}
                     setCoordinates={setCoordinates}
                     setAdress={setAdress}
                     setShowRoutesComponent={setShowRoutesComponent} />
             }
-            {showRoutesComponent && <SearchRoutes
-                setStartCoordinates={setStartCoordinates}
-                setEndCoordinates={setEndCoordinates}
-                setShowRoutesComponent={setShowRoutesComponent}
-                CatchActualUserLocationForStartCoordinates={CatchActualUserLocationForStartCoordinates}
-                setShowRequestUserLocation={setShowRequestUserLocation} />
+            {showRoutesComponent && 
+                <SearchRoutes
+                    setStartCoordinates={setStartCoordinates}
+                    setEndCoordinates={setEndCoordinates}
+                    setShowRoutesComponent={setShowRoutesComponent}
+                    CatchActualUserLocationForStartCoordinates={CatchActualUserLocationForStartCoordinates}
+                    setShowRequestUserLocation={setShowRequestUserLocation} />
             }
             <MapContainer
                 style={{ height: "100%", width: "100%" }}
